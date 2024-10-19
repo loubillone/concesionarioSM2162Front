@@ -1,24 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Swal from "sweetalert2";
+import testApi from "../api/testApi";
 
 const Registro = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
-
-  const [usuario, setUsuario] = useState(() => {
-    const usuariosGuardados = localStorage.getItem("usuarios");
-    return usuariosGuardados ? JSON.parse(usuariosGuardados) : []; // Si existen, cargarlos, si no, array vacío
-  });
-
-  useEffect(() => {
-    // Evitar guardar un array vacío en localStorage cuando cargamos por primera vez
-    if (usuario.length > 0) {
-      localStorage.setItem("usuarios", JSON.stringify(usuario));
-    }
-  }, [usuario]); // Se ejecuta cada vez que el estado "usuario" cambia
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,26 +33,54 @@ const Registro = () => {
         title: "Oops...",
         text: "Email inválido",
       });
-    } else if (password !== confPassword) {
+    }
+
+    const validarPass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+    const resultadoValidacionPass = validarPass.test(password);
+
+    if (!resultadoValidacionPass) {
+      return Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Contraseña inválida, debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.",
+      });
+    }
+
+    if (password !== confPassword) {
       return Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "Las contraseñas no coinciden",
       });
-    } else {
+    }
+
+    registrarUsuarioBackend(name, email, password);
+  };
+
+  const registrarUsuarioBackend = async (name, email, password) => {
+    try {
+      const resp = await testApi.post("/auth/crearUsuario", {
+        name,
+        email,
+        password,
+      });
+
       Swal.fire({
         position: "center",
         icon: "success",
-        title: "Usuario registrado",
+        title: resp.data.msg,
         showConfirmButton: false,
         timer: 1500,
       });
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.response.data.msg,
+      });
     }
-
-    const nuevoUsuario = { name, email, password };
-
-    setUsuario([...usuario, nuevoUsuario]);
   };
+
   return (
     <div>
       <div className="container">
