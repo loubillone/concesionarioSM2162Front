@@ -62,7 +62,7 @@ const Registro = () => {
 
     const nuevoUsuario = { name, email, password };
 
-    setUsuario([nuevoUsuario, ...usuario]);
+    setUsuario([...usuario, nuevoUsuario]);
   };
   return (
     <div>
