@@ -5,6 +5,7 @@ import testApi from "../api/testApi";
 
 const Registro = () => {
   const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
@@ -16,7 +17,7 @@ const Registro = () => {
   };
 
   const validarDatosForm = () => {
-    if (!name || !email || !password || !confPassword) {
+    if (!name || !lastName || !email || !password || !confPassword) {
       return Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -54,13 +55,19 @@ const Registro = () => {
       });
     }
 
-    registrarUsuarioBackend(name.toLowerCase(), email.toLowerCase(), password);
+    registrarUsuarioBackend(
+      name.toLowerCase().trim(),
+      lastName.toLowerCase().trim(),
+      email.toLowerCase().trim(),
+      password.trim()
+    );
   };
 
-  const registrarUsuarioBackend = async (name, email, password) => {
+  const registrarUsuarioBackend = async (name, lastName, email, password) => {
     try {
       const resp = await testApi.post("/auth/crearUsuario", {
         name,
+        lastName,
         email,
         password,
       });
@@ -102,6 +109,19 @@ const Registro = () => {
                   type="text"
                   onChange={(e) => {
                     setName(e.target.value);
+                  }}
+                />
+              </Form.Group>
+
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlInput1"
+              >
+                <Form.Label>Apellido</Form.Label>
+                <Form.Control
+                  type="text"
+                  onChange={(e) => {
+                    setLastName(e.target.value);
                   }}
                 />
               </Form.Group>
