@@ -54,7 +54,7 @@ const Registro = () => {
       });
     }
 
-    registrarUsuarioBackend(name, email, password);
+    registrarUsuarioBackend(name.toLowerCase(), email.toLowerCase(), password);
   };
 
   const registrarUsuarioBackend = async (name, email, password) => {
