@@ -25,6 +25,30 @@ const Registro = () => {
       });
     }
 
+    const validarNombre =
+      /^(?!.*\s{2})[A-Za-zÑñáéíóúÁÉÍÓÚ]+(\s[A-Za-zÑñáéíóúÁÉÍÓÚ]+)?$/;
+    const resultadoValidacionNombre = validarNombre.test(name);
+
+    if (!resultadoValidacionNombre) {
+      return Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Nombre inválido",
+      });
+    }
+
+    const validarApellido =
+      /^(?!.*\s{2})[A-Za-zÑñáéíóúÁÉÍÓÚ]+(\s[A-Za-zÑñáéíóúÁÉÍÓÚ]+)?$/;
+    const resultadoValidacionApellido = validarApellido.test(lastName);
+
+    if (!resultadoValidacionApellido) {
+      return Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Apellido inválido",
+      });
+    }
+
     const validarEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     const resultadoValidacionEmail = validarEmail.test(email);
 
