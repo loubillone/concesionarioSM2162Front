@@ -33,9 +33,9 @@ const Navegador = () => {
         </Container>
 
         <div className="navbar-iconos">
-          <i class="fa fa-heart" aria-hidden="true"></i>
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <i class="fa fa-power-off" aria-hidden="true"></i>
+          <i className="fa fa-heart" aria-hidden="true"></i>
+          <i className="fa fa-search" aria-hidden="true"></i>
+          <i className="fa fa-power-off" aria-hidden="true"></i>
         </div>
       </Navbar>
     </div>
