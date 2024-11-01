@@ -103,6 +103,8 @@ const Registro = () => {
         showConfirmButton: false,
         timer: 1500,
       });
+
+      document.getElementById("formularioRegistro").reset();
     } catch (error) {
       Swal.fire({
         icon: "error",
@@ -123,7 +125,7 @@ const Registro = () => {
 
         <div className="row">
           <div className="col">
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} id="formularioRegistro">
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
