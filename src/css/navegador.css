@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -22,6 +23,7 @@ body {
   font-size: 1.8rem !important;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: #262626 !important;
 }
 
 .container-items {
@@ -33,6 +35,7 @@ body {
 .nav-items {
   font-size: 1.1rem !important;
   margin-right: 4rem;
+  color: #333333 !important;
 }
 
 .nav-items:hover {
