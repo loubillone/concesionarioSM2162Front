@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+@font-face {
+  font-family: "kulacino";
+  src: url("../assets/fonts/Kulacino/Kulacino.otf");
+}
+
+.logo-sm {
+  font-family: "kulacino";
+  margin-left: 2rem;
+  font-size: 1.8rem !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items {
+  font-size: 1.1rem !important;
+  margin-right: 4rem;
+}
+
+.nav-items:hover {
+  font-weight: 500;
+}
+
+.navbar-iconos {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.items-iconos {
+  margin-right: 1rem;
+  font-size: small;
+}
+
+.icono-heart:hover {
+  color: red;
+}
+
+.icono-search:hover {
+  color: grey;
+}
+
+.icono-sesion:hover {
+  color: grey;
+}

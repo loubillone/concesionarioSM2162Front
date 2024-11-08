@@ -8,14 +8,14 @@ import Navbar from "react-bootstrap/Navbar";
 const Navegador = () => {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            SM 2162
+      <Navbar expand="lg" sticky="top">
+        <Container fluid>
+          <Navbar.Brand as={Link} to="/" className="logo-sm">
+            SM2162
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto container-items">
               <Nav.Link as={NavLink} to="/" className="nav-items">
                 INICIO
               </Nav.Link>
@@ -33,9 +33,18 @@ const Navegador = () => {
         </Container>
 
         <div className="navbar-iconos">
-          <i className="fa fa-heart" aria-hidden="true"></i>
-          <i className="fa fa-search" aria-hidden="true"></i>
-          <i className="fa fa-power-off" aria-hidden="true"></i>
+          <i
+            className="fa fa-heart items-iconos icono-heart"
+            aria-hidden="true"
+          ></i>
+          <i
+            className="fa fa-search items-iconos icono-search"
+            aria-hidden="true"
+          ></i>
+          <i
+            className="fa fa-power-off items-iconos icono-sesion"
+            aria-hidden="true"
+          ></i>
         </div>
       </Navbar>
     </div>
