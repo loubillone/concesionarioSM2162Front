@@ -51,7 +51,7 @@ body {
 }
 
 .icono-heart:hover {
-  color: red;
+  color: rgb(186, 75, 75);
 }
 
 .icono-search:hover {
@@ -61,3 +61,29 @@ body {
 .icono-sesion:hover {
   color: grey;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .navbar-iconos {
+    width: 15%;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-sm {
+    margin-left: 1rem;
+  }
+
+  .navbar-iconos {
+    width: 15%;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    font-size: smaller;
+  }
+}
+
+/*MEDIA QUERIES*/

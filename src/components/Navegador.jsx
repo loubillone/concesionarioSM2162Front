@@ -29,23 +29,23 @@ const Navegador = () => {
                 CONTACTO
               </Nav.Link>
             </Nav>
+
+            <div className="navbar-iconos">
+              <i
+                className="fa fa-heart items-iconos icono-heart"
+                aria-hidden="true"
+              ></i>
+              <i
+                className="fa fa-search items-iconos icono-search"
+                aria-hidden="true"
+              ></i>
+              <i
+                className="fa fa-power-off items-iconos icono-sesion"
+                aria-hidden="true"
+              ></i>
+            </div>
           </Navbar.Collapse>
         </Container>
-
-        <div className="navbar-iconos">
-          <i
-            className="fa fa-heart items-iconos icono-heart"
-            aria-hidden="true"
-          ></i>
-          <i
-            className="fa fa-search items-iconos icono-search"
-            aria-hidden="true"
-          ></i>
-          <i
-            className="fa fa-power-off items-iconos icono-sesion"
-            aria-hidden="true"
-          ></i>
-        </div>
       </Navbar>
     </div>
   );
