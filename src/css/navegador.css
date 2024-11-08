@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+@font-face {
+  font-family: "kulacino";
+  src: url("../assets/fonts/Kulacino/Kulacino.otf");
+}
+
+.logo-sm {
+  font-family: "kulacino";
+  margin-left: 2rem;
+  font-size: 1.8rem !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #262626 !important;
+}
+
+.container-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items {
+  font-size: 1.1rem !important;
+  margin-right: 4rem;
+  color: #333333 !important;
+}
+
+.nav-items:hover {
+  font-weight: 500;
+}
+
+.navbar-iconos {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.items-iconos {
+  margin-right: 1rem;
+  font-size: small;
+}
+
+.icono-heart:hover {
+  color: rgb(186, 75, 75);
+}
+
+.icono-search:hover {
+  color: grey;
+}
+
+.icono-sesion:hover {
+  color: grey;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .navbar-iconos {
+    width: 15%;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-sm {
+    margin-left: 1rem;
+  }
+
+  .navbar-iconos {
+    width: 15%;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    font-size: smaller;
+  }
+}
+
+/*MEDIA QUERIES*/
