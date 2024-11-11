@@ -1,0 +1,40 @@
+.carousel-item {
+  position: relative;
+}
+
+@font-face {
+  font-family: "seoge";
+  src: url("../assets/fonts/Seoge/segoeuithis.ttf");
+}
+
+.contenedor-texto-carousel {
+  width: 50%;
+  height: 20rem;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titulo-item-carousel {
+  font-family: "kulacino";
+  font-size: 10rem;
+  color: #ffffff;
+}
+
+.texto-item-carousel {
+  font-size: 1.5rem;
+  text-align: start;
+  color: #c3c3c3;
+  font-family: "seoge";
+}
+
+button,
+.boton-item-carousel {
+  background-color: #e29b00;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 2rem;
+}
