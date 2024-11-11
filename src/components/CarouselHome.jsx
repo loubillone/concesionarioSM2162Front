@@ -10,14 +10,14 @@ const CarouselHome = () => {
   return (
     <div>
       <Carousel
-        // controls={false}
-        // indicators={false}
-        // interval={3000}
-        // // pause={true}
         controls={false}
         indicators={false}
-        interval={null}
-        pause={"hover"}
+        interval={3000}
+        pause={false}
+        // controls={false}
+        // indicators={false}
+        // interval={null}
+        // pause={"hover"}
       >
         <Carousel.Item className="carousel-item">
           <img
@@ -28,12 +28,10 @@ const CarouselHome = () => {
           <Carousel.Caption className="contenedor-texto-carousel">
             <h3 className="titulo-item-carousel">RENAULT BIGSTER</h3>
             <p className="texto-item-carousel">
-              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE OK Y USADOS CON
+              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="btn btn-primary boton-item-carousel">
-              CONTACTAR
-            </button>
+            <button className="boton-item-carousel">CONTACTAR</button>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -42,12 +40,10 @@ const CarouselHome = () => {
           <Carousel.Caption className="contenedor-texto-carousel">
             <h3 className="titulo-item-carousel">VOLKSWAGEN GOLF</h3>
             <p className="texto-item-carousel">
-              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE OK Y USADOS CON
+              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="btn btn-primary boton-item-carousel">
-              CONTACTAR
-            </button>
+            <button className="boton-item-carousel">CONTACTAR</button>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -56,12 +52,10 @@ const CarouselHome = () => {
           <Carousel.Caption className="contenedor-texto-carousel">
             <h3 className="titulo-item-carousel">TOYOTA HILUX</h3>
             <p className="texto-item-carousel">
-              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE OK Y USADOS CON
+              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="btn btn-primary boton-item-carousel">
-              CONTACTAR
-            </button>
+            <button className="boton-item-carousel">CONTACTAR</button>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -70,12 +64,10 @@ const CarouselHome = () => {
           <Carousel.Caption className="contenedor-texto-carousel">
             <h3 className="titulo-item-carousel">FORD RANGER</h3>
             <p className="texto-item-carousel">
-              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE OK Y USADOS CON
+              ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="btn btn-primary boton-item-carousel">
-              CONTACTAR
-            </button>
+            <button className="boton-item-carousel">CONTACTAR</button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
