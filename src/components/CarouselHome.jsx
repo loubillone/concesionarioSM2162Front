@@ -10,14 +10,14 @@ const CarouselHome = () => {
   return (
     <div>
       <Carousel
-        controls={false}
-        indicators={false}
-        interval={3000}
-        pause={false}
         // controls={false}
         // indicators={false}
-        // interval={null}
-        // pause={"hover"}
+        // interval={3000}
+        // pause={false}
+        controls={false}
+        indicators={false}
+        interval={null}
+        pause={"hover"}
       >
         <Carousel.Item className="carousel-item">
           <img

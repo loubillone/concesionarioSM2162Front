@@ -30,13 +30,15 @@
   color: #c3c3c3;
   font-family: "seoge";
   width: 70%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .boton-item-carousel {
   font-family: "seoge";
   font-weight: 700;
   letter-spacing: 0.1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: #e29b00;
   width: 15rem;
   height: auto;
