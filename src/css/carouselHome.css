@@ -3,7 +3,7 @@
   src: url("../assets/fonts/Seoge/segoeuithis.ttf");
 }
 
-.carousel-item {
+.carousel-container {
   position: relative;
 }
 
@@ -105,7 +105,7 @@
   background-color: #ffffff;
   height: 30rem;
   position: absolute;
-  top: 25%;
+  top: 10%;
   left: 5%;
   display: flex;
   flex-direction: column;
@@ -124,7 +124,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 5%;
   font-size: 1.5rem;
 }
@@ -149,6 +149,7 @@ a .icono-flyer-twitter {
     width: 80%;
     height: 10rem;
   }
+
   .titulo-item-carousel {
     font-size: 4rem;
   }
@@ -189,7 +190,7 @@ a .icono-flyer-twitter {
   }
 
   .contenedor-iconos {
-    top: 30%;
+    top: 70%;
     font-size: 0.6rem;
     left: 8%;
   }

@@ -14,7 +14,7 @@ const CarouselHome = () => {
     setActiveIndex(selectedIndex);
   };
   return (
-    <div>
+    <div className="carousel-container">
       <Carousel
         controls={false}
         indicators={false}
@@ -215,7 +215,6 @@ const CarouselHome = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-
       <div className="contenedor-barra">
         <div className="barra-flyer">
           <span className="barra-flyer-numero">{`0${activeIndex + 1}`}</span>
@@ -249,7 +248,6 @@ const CarouselHome = () => {
           </a>
         </div>
       </div>
-
       <div>
         <a
           href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
