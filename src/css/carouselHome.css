@@ -99,3 +99,26 @@
   right: 2.5rem;
   bottom: 2.5rem;
 }
+
+.barra-flyer {
+  width: 0.2rem;
+  background-color: #ffffff;
+  height: 30rem;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barra-numero {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 100%;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.barra-flyer-color {
+}

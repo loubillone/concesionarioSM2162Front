@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/carouselHome.css";
 import Carousel from "react-bootstrap/Carousel";
 import renaultBigster from "../assets/image/carousel/renaultBigster.png";
@@ -8,6 +8,11 @@ import fordRanger from "../assets/image/carousel/fordRanger.png";
 import whatsappIcon from "../assets/image/carousel/whatsappIcon.png";
 
 const CarouselHome = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setActiveIndex(selectedIndex);
+  };
   return (
     <div>
       <Carousel
@@ -15,6 +20,9 @@ const CarouselHome = () => {
         indicators={false}
         interval={4000}
         pause={false}
+        activeIndex={activeIndex}
+        onSelect={handleSelect}
+
         // controls={false}
         // indicators={false}
         // interval={null}
@@ -184,6 +192,12 @@ const CarouselHome = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+
+      <div className="contenedor-barra">
+        <div className="barra-flyer barra-flyer-color">
+          <span className="barra-numero">{`0${activeIndex + 1}`}</span>
+        </div>
+      </div>
 
       <div>
         <a
