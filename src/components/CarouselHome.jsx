@@ -194,8 +194,36 @@ const CarouselHome = () => {
       </Carousel>
 
       <div className="contenedor-barra">
-        <div className="barra-flyer barra-flyer-color">
-          <span className="barra-numero">{`0${activeIndex + 1}`}</span>
+        <div className="barra-flyer">
+          <span className="barra-flyer-numero">{`0${activeIndex + 1}`}</span>
+        </div>
+
+        <div className="contenedor-iconos">
+          <a
+            href="https://www.facebook.com/profile.php?id=100046230890961"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-facebook icono-flyer" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/sanmartin2162/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-instagram icono-flyer" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://x.com/home"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              className="fa fa-twitter icono-flyer-twitter"
+              aria-hidden="true"
+            ></i>
+          </a>
         </div>
       </div>
 

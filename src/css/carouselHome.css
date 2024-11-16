@@ -112,7 +112,7 @@
   align-items: center;
 }
 
-.barra-numero {
+.barra-flyer-numero {
   font-size: 1.5rem;
   position: absolute;
   top: 100%;
@@ -120,5 +120,20 @@
   font-family: "Roboto", sans-serif;
 }
 
-.barra-flyer-color {
+.contenedor-iconos {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  font-size: 1.5rem;
+}
+
+a .icono-flyer {
+  color: #ffffff;
+  padding-bottom: 3rem;
+}
+
+a .icono-flyer-twitter {
+  color: #ffffff;
 }
