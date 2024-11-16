@@ -40,7 +40,13 @@ const CarouselHome = () => {
               ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="boton-item-carousel">CONTACTAR</button>
+            <a
+              href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="boton-item-carousel">CONTACTAR</button>
+            </a>
 
             <div className="row fila-flyer-info">
               <div className="col-3">
@@ -80,7 +86,13 @@ const CarouselHome = () => {
               ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="boton-item-carousel">CONTACTAR</button>
+            <a
+              href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="boton-item-carousel">CONTACTAR</button>
+            </a>
 
             <div className="row fila-flyer-info">
               <div className="col-3">
@@ -120,7 +132,13 @@ const CarouselHome = () => {
               ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="boton-item-carousel">CONTACTAR</button>
+            <a
+              href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="boton-item-carousel">CONTACTAR</button>
+            </a>
 
             <div className="row fila-flyer-info">
               <div className="col-3">
@@ -160,7 +178,13 @@ const CarouselHome = () => {
               ENCUENTRA EL AUTO PERFECTO: COMPRA Y VENTA DE 0KM Y USADOS CON
               SEGURIDAD Y GARANTÍA
             </p>
-            <button className="boton-item-carousel">CONTACTAR</button>
+            <a
+              href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="boton-item-carousel">CONTACTAR</button>
+            </a>
 
             <div className="row fila-flyer-info">
               <div className="col-3">
