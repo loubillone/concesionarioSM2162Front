@@ -5,19 +5,20 @@ import renaultBigster from "../assets/image/carousel/renaultBigster.png";
 import vvGolf from "../assets/image/carousel/vwGolf.png";
 import toyotaHilux from "../assets/image/carousel/toyotaHilux.png";
 import fordRanger from "../assets/image/carousel/fordRanger.png";
+import whatsappIcon from "../assets/image/carousel/whatsappIcon.png";
 
 const CarouselHome = () => {
   return (
     <div>
       <Carousel
-        // controls={false}
-        // indicators={false}
-        // interval={4000}
-        // pause={false}
         controls={false}
         indicators={false}
-        interval={null}
-        pause={"hover"}
+        interval={4000}
+        pause={false}
+        // controls={false}
+        // indicators={false}
+        // interval={null}
+        // pause={"hover"}
       >
         <Carousel.Item className="carousel-item">
           <img
@@ -72,6 +73,34 @@ const CarouselHome = () => {
               SEGURIDAD Y GARANTÍA
             </p>
             <button className="boton-item-carousel">CONTACTAR</button>
+
+            <div className="row fila-flyer-info">
+              <div className="col-3">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">01</span>
+                  <span className="texto-flyer-info-velocidad">
+                    Velocidad Máxima
+                  </span>
+                  <span className="texto-flyer-info-especial">250 km/h</span>
+                </div>
+              </div>
+              <div className="col-3 ">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">02</span>
+                  <span className="texto-flyer-info-velocidad">
+                    Consumo Combustible
+                  </span>
+                  <span className="texto-flyer-info-especial">6.3 - 5,7.1</span>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">03</span>
+                  <span className="texto-flyer-info-velocidad">Precio</span>
+                  <span className="texto-flyer-info-especial">$80.000 USD</span>
+                </div>
+              </div>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -84,6 +113,34 @@ const CarouselHome = () => {
               SEGURIDAD Y GARANTÍA
             </p>
             <button className="boton-item-carousel">CONTACTAR</button>
+
+            <div className="row fila-flyer-info">
+              <div className="col-3">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">01</span>
+                  <span className="texto-flyer-info-velocidad">
+                    Velocidad Máxima
+                  </span>
+                  <span className="texto-flyer-info-especial">250 km/h</span>
+                </div>
+              </div>
+              <div className="col-3 ">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">02</span>
+                  <span className="texto-flyer-info-velocidad">
+                    Consumo Combustible
+                  </span>
+                  <span className="texto-flyer-info-especial">6.3 - 5,7.1</span>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">03</span>
+                  <span className="texto-flyer-info-velocidad">Precio</span>
+                  <span className="texto-flyer-info-especial">$80.000 USD</span>
+                </div>
+              </div>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -96,9 +153,45 @@ const CarouselHome = () => {
               SEGURIDAD Y GARANTÍA
             </p>
             <button className="boton-item-carousel">CONTACTAR</button>
+
+            <div className="row fila-flyer-info">
+              <div className="col-3">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">01</span>
+                  <span className="texto-flyer-info-velocidad">
+                    Velocidad Máxima
+                  </span>
+                  <span className="texto-flyer-info-especial">250 km/h</span>
+                </div>
+              </div>
+              <div className="col-3 ">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">02</span>
+                  <span className="texto-flyer-info-velocidad">
+                    Consumo Combustible
+                  </span>
+                  <span className="texto-flyer-info-especial">6.3 - 5,7.1</span>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="contenedor-flyer-info">
+                  <span className="texto-flyer-info-numeros">03</span>
+                  <span className="texto-flyer-info-velocidad">Precio</span>
+                  <span className="texto-flyer-info-especial">$80.000 USD</span>
+                </div>
+              </div>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+
+      <div>
+        <img
+          src={whatsappIcon}
+          alt="icono whatsapp"
+          className="icono-whatsapp"
+        />
+      </div>
     </div>
   );
 };
