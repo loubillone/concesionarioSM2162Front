@@ -22,7 +22,6 @@ const CarouselHome = () => {
         pause={false}
         activeIndex={activeIndex}
         onSelect={handleSelect}
-
         // controls={false}
         // indicators={false}
         // interval={null}
