@@ -137,3 +137,60 @@ a .icono-flyer {
 a .icono-flyer-twitter {
   color: #ffffff;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .contenedor-texto-carousel {
+    top: 1%;
+  }
+  .titulo-item-carousel {
+    font-size: 4rem;
+  }
+
+  .texto-item-carousel {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .boton-item-carousel {
+    font-size: 0.7rem;
+    width: 11rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .fila-flyer-info {
+    height: 5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    top: 67%;
+  }
+
+  .texto-flyer-info-numeros {
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .texto-flyer-info-velocidad {
+    font-size: 0.7rem;
+  }
+
+  .texto-flyer-info-especial {
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .icono-whatsapp {
+    width: 4rem;
+    right: 1.5rem;
+    bottom: 2rem;
+  }
+}
+
+/*MEDIA QUERIES*/
