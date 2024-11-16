@@ -186,11 +186,17 @@ const CarouselHome = () => {
       </Carousel>
 
       <div>
-        <img
-          src={whatsappIcon}
-          alt="icono whatsapp"
-          className="icono-whatsapp"
-        />
+        <a
+          href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={whatsappIcon}
+            alt="icono whatsapp"
+            className="icono-whatsapp"
+          />
+        </a>
       </div>
     </div>
   );
