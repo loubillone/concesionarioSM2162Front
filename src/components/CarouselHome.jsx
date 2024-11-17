@@ -8,6 +8,7 @@ import fordRanger from "../assets/image/carousel/fordRanger.png";
 import whatsappIcon from "../assets/image/carousel/whatsappIcon.png";
 
 const CarouselHome = () => {
+  const totalSlides = 4;
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
@@ -217,6 +218,13 @@ const CarouselHome = () => {
       </Carousel>
       <div className="contenedor-barra">
         <div className="barra-flyer">
+          <div
+            className="barra-indicador"
+            style={{
+              height: `${100 / totalSlides}%`,
+              top: `${(100 / totalSlides) * activeIndex}%`,
+            }}
+          ></div>
           <span className="barra-flyer-numero">{`0${activeIndex + 1}`}</span>
         </div>
 

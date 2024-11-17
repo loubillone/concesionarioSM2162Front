@@ -101,6 +101,7 @@
 }
 
 .barra-flyer {
+  position: relative;
   width: 0.2rem;
   background-color: #ffffff;
   height: 30rem;
@@ -113,11 +114,19 @@
 }
 
 .barra-flyer-numero {
+  position: absolute;
   font-size: 1.5rem;
   position: absolute;
   top: 100%;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+}
+
+.barra-indicador {
+  position: absolute;
+  width: 0.5rem;
+  background-color: #ffae00;
+  transition: transform 0.3s ease;
 }
 
 .contenedor-iconos {
@@ -185,6 +194,10 @@ a .icono-flyer-twitter {
     font-size: 1rem;
   }
 
+  .barra-indicador {
+    width: 0.3rem;
+  }
+
   .contenedor-iconos {
     top: 75%;
     left: 5%;
@@ -240,6 +253,10 @@ a .icono-flyer-twitter {
 
   .barra-flyer-numero {
     font-size: 0.8rem;
+  }
+
+  .barra-indicador {
+    width: 0.2rem;
   }
 
   .contenedor-iconos {
