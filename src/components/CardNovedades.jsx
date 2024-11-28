@@ -47,14 +47,21 @@ const CardNovedades = () => {
                       <Card.Subtitle className="mb-2 subtitulo-card-novedades">
                         {card.subtitulo}
                       </Card.Subtitle>
-                      <button
-                        style={{
-                          backgroundColor: card.backgroundColorButtom,
-                        }}
-                        className="boton-card-novedades"
+
+                      <a
+                        href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Contactar
-                      </button>
+                        <button
+                          style={{
+                            backgroundColor: card.backgroundColorButtom,
+                          }}
+                          className="boton-card-novedades"
+                        >
+                          Contactar
+                        </button>
+                      </a>
 
                       <Card.Img
                         variant="top"
