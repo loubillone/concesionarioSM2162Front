@@ -31,7 +31,7 @@ const CardNovedades = () => {
             <div className="row">
               {novedades.map((card, index) => (
                 <div
-                  className="col-10 offset-1 col-md-6 offset-md-0"
+                  className="col-10 offset-1 col-md-10 offset-md-1 col-lg-6 offset-lg-0"
                   key={index}
                 >
                   <Card

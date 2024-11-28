@@ -54,6 +54,28 @@
 }
 
 @media (max-width: 768px) {
+  .card-novedades {
+    margin-bottom: 1.5rem;
+  }
+  .card-body-novedades {
+    height: 28rem;
+    width: auto;
+  }
+
+  .card .titulo-card-novedades {
+    font-size: 2.5rem;
+    padding-right: 1rem;
+  }
+
+  .card .subtitulo-card-novedades {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .card .imagen-card-novedades {
+    top: 40%;
+    left: 45%;
+  }
 }
 
 @media (max-width: 480px) {
