@@ -38,6 +38,8 @@ const CardNovedades = () => {
                     className="card-novedades"
                     style={{
                       backgroundColor: card.backgroundColor,
+                      borderRadius: "1rem",
+                      border: "none",
                     }}
                   >
                     <Card.Body className="card-body-novedades">
