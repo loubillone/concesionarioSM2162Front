@@ -98,6 +98,7 @@
   width: 8rem;
   right: 2.5rem;
   bottom: 2.5rem;
+  z-index: 100;
 }
 
 .barra-flyer {
