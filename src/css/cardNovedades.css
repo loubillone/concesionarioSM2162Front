@@ -1,0 +1,110 @@
+.card-novedades {
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+.contenedor-card {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.card-body-novedades {
+  position: relative;
+  height: 28rem;
+  width: 35rem;
+}
+
+.card .titulo-card-novedades {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.card .subtitulo-card-novedades {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card .imagen-card-novedades {
+  width: 30rem;
+  object-fit: contain;
+  position: absolute;
+  top: 43%;
+  left: 70%;
+}
+
+.boton-card-novedades {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 12rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card-novedades {
+    margin-bottom: 1.5rem;
+  }
+  .card-body-novedades {
+    height: 28rem;
+    width: auto;
+  }
+
+  .card .titulo-card-novedades {
+    font-size: 2.5rem;
+    padding-right: 1rem;
+  }
+
+  .card .subtitulo-card-novedades {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .card .imagen-card-novedades {
+    top: 40%;
+    left: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-novedades {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-body-novedades {
+    height: 20rem;
+    width: auto;
+  }
+
+  .card .titulo-card-novedades {
+    font-size: 1.5rem;
+  }
+
+  .card .subtitulo-card-novedades {
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+  }
+
+  .card .imagen-card-novedades {
+    width: 13rem;
+    top: 60%;
+    left: 48%;
+  }
+
+  .boton-card-novedades {
+    font-size: 1rem;
+    width: 7rem;
+  }
+}
