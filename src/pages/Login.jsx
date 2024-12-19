@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Swal from "sweetalert2";
 import testApi from "../api/testApi";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,10 +39,12 @@ const Login = () => {
         icon: "success",
         title: resp.data.msg,
         showConfirmButton: false,
-        timer: 1500,
+        timer: 1000,
       });
 
       document.getElementById("formularioLogin").reset();
+      localStorage.setItem("token", resp.data.token);
+      navigate("/");
     } catch (error) {
       Swal.fire({
         icon: "error",
@@ -87,7 +91,9 @@ const Login = () => {
                 />
               </Form.Group>
 
-              <button className="btn btn-primary">Iniciar Sesión</button>
+              <button className="btn btn-primary" type="submit">
+                Iniciar Sesión
+              </button>
             </Form>
           </div>
         </div>
