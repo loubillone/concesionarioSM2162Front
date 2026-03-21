@@ -42,7 +42,7 @@ body {
 }
 
 .nav-items {
-  font-size: 1.1rem !important;
+  font-size: 1.5rem !important;
   margin-right: 4rem;
   color: #333333 !important;
 }
@@ -83,6 +83,10 @@ body {
     margin-left: 0.6rem;
     font-size: smaller;
   }
+
+  .nav-items {
+    font-size: 1.2rem !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -100,6 +104,10 @@ body {
     margin-top: 1rem;
     margin-left: 0.6rem;
     font-size: smaller;
+  }
+
+  .nav-items {
+    font-size: 1rem !important;
   }
 }
 
