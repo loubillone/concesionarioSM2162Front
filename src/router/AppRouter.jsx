@@ -7,6 +7,7 @@ import Contacto from "../pages/Contacto";
 import Navegador from "../components/Navegador";
 import Registro from "../pages/Registro";
 import Login from "../pages/Login";
+import Footer from "../components/Footer";
 
 const AppRouter = () => {
   return (
@@ -21,6 +22,7 @@ const AppRouter = () => {
           <Route path="/quienesSomos" element={<QuienesSomos />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
