@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* stretch + align-self: texto arriba, imagen abajo (sin hueco grande arriba) */
   align-items: stretch;
   justify-content: space-between;
   gap: 1rem 1.25rem;
@@ -58,7 +57,7 @@
 .card .titulo-card-novedades {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1.35rem, 2.8vw, 3rem);
+  font-size: clamp(2.5rem, 2.8vw, 3rem);
   font-weight: 400;
   padding-top: 0;
   padding-left: 0;
@@ -68,7 +67,7 @@
 .card .subtitulo-card-novedades {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  font-size: clamp(1.5rem, 1.8vw, 1.5rem);
   font-weight: 300;
   padding-top: 0.65rem;
   padding-left: 0;
