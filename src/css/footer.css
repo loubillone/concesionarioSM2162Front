@@ -1,6 +1,5 @@
 .site-footer {
   --footer-bg: #1b1b1b;
-  --footer-accent-line: #0088ff;
   --footer-yellow: #ffbf00;
   --footer-heading: #ffffff;
   --footer-muted: #a0a0a0;
@@ -9,7 +8,6 @@
   width: 100%;
   max-width: 100%;
   overflow-x: clip;
-  border-top: 2px solid var(--footer-accent-line);
 }
 
 .footer-shell {
