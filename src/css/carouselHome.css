@@ -54,45 +54,6 @@
   background-color: #ffae00;
 }
 
-.fila-flyer-info {
-  width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  padding-left: 5rem;
-  text-align: start;
-  background-color: #00000099;
-  position: absolute;
-  top: 200%;
-}
-
-.contenedor-flyer-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.texto-flyer-info-numeros {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.3rem;
-  color: #ffffff;
-  padding-bottom: 1rem;
-}
-
-.texto-flyer-info-velocidad {
-  font-family: Roboto, "Open Sans";
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-.texto-flyer-info-especial {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
-  color: #7e7e7e;
-  padding-bottom: 1rem;
-}
-
 .icono-whatsapp {
   position: fixed;
   width: 8rem;
@@ -102,13 +63,13 @@
 }
 
 .barra-flyer {
-  position: relative;
+  position: absolute;
   width: 0.2rem;
   background-color: #ffffff;
   height: 30rem;
-  position: absolute;
-  top: 10%;
+  top: 50%;
   left: 5%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,30 +91,58 @@
   transition: transform 0.3s ease;
 }
 
-.contenedor-iconos {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 80%;
-  left: 5%;
-  font-size: 1.5rem;
-}
-
-a .icono-flyer {
-  color: #ffffff;
-  padding-bottom: 3rem;
-}
-
-a .icono-flyer-twitter {
-  color: #ffffff;
-}
-
 /*MEDIA QUERIES*/
+
+/*
+ * 769px–1199px: fuera de "mobile" pero sin ancho de desktop grande;
+ * el estilo base (12rem + height fijo) oculta el botón CONTACTAR.
+ */
+@media (min-width: 769px) and (max-width: 1199.98px) {
+  .contenedor-texto-carousel {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    top: 18%;
+    left: 38%;
+    right: 1.25rem;
+    width: auto;
+    max-width: calc(100% - 38% - 1.25rem);
+    box-sizing: border-box;
+    padding-bottom: 0.75rem;
+    overflow: visible;
+  }
+
+  .titulo-item-carousel {
+    font-size: clamp(4.5rem, 7.5vw, 9rem);
+    line-height: 0.95;
+  }
+
+  .texto-item-carousel {
+    font-size: clamp(1.1rem, 1.65vw, 1.65rem);
+    width: min(48%, 26rem);
+    max-width: 100%;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+  }
+
+  .barra-flyer {
+    height: clamp(14rem, 42vh, 24rem);
+  }
+
+  .barra-flyer-numero {
+    font-size: clamp(1rem, 1.4vw, 1.35rem);
+  }
+
+  .texto-item-carousel {
+    width: 70%;
+  }
+}
 
 @media (max-width: 768px) {
   .contenedor-texto-carousel {
     width: 100%;
-    height: 10rem;
+    height: auto;
+    min-height: 0;
     top: 10%;
     left: 40%;
   }
@@ -179,14 +168,6 @@ a .icono-flyer-twitter {
     padding-bottom: 1rem;
   }
 
-  .fila-flyer-info {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-
-    top: 235%;
-  }
-
   .barra-flyer {
     height: 17rem;
   }
@@ -198,15 +179,19 @@ a .icono-flyer-twitter {
   .barra-indicador {
     width: 0.3rem;
   }
+}
 
-  .contenedor-iconos {
-    top: 75%;
-    left: 5%;
-    font-size: 1rem;
+/* Entre 481px y 768px: título y textos más chicos para que quepa el botón CONTACTAR */
+@media (max-width: 768px) and (min-width: 481px) {
+  .titulo-item-carousel {
+    font-size: clamp(3rem, 9vw, 5.5rem);
+    line-height: 0.95;
   }
 
-  a .icono-flyer {
-    padding-bottom: 2rem;
+  .texto-item-carousel {
+    font-size: clamp(0.95rem, 2.4vw, 1.3rem);
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
   }
 }
 
@@ -214,7 +199,8 @@ a .icono-flyer-twitter {
   .contenedor-texto-carousel {
     top: 8%;
     width: 80%;
-    height: 10rem;
+    height: auto;
+    min-height: 0;
   }
 
   .titulo-item-carousel {
@@ -235,10 +221,6 @@ a .icono-flyer-twitter {
     padding-bottom: 0.5rem;
   }
 
-  .fila-flyer-info {
-    display: none;
-  }
-
   .icono-whatsapp {
     width: 4rem;
     right: 1.5rem;
@@ -248,8 +230,9 @@ a .icono-flyer-twitter {
   .barra-flyer {
     width: 0.2rem;
     height: 7rem;
-    top: 12%;
+    top: 50%;
     left: 8%;
+    transform: translateY(-50%);
   }
 
   .barra-flyer-numero {
@@ -258,16 +241,6 @@ a .icono-flyer-twitter {
 
   .barra-indicador {
     width: 0.2rem;
-  }
-
-  .contenedor-iconos {
-    top: 70%;
-    font-size: 0.6rem;
-    left: 8%;
-  }
-
-  a .icono-flyer {
-    padding-bottom: 1rem;
   }
 }
 

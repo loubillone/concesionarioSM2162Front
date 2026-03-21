@@ -43,34 +43,6 @@ const CarouselHome = () => {
             >
               <button className="boton-item-carousel">CONTACTAR</button>
             </a>
-
-            <div className="row fila-flyer-info">
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">01</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Velocidad Máxima
-                  </span>
-                  <span className="texto-flyer-info-especial">250 km/h</span>
-                </div>
-              </div>
-              <div className="col-3 ">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">02</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Consumo Combustible
-                  </span>
-                  <span className="texto-flyer-info-especial">6.3 - 5,7.1</span>
-                </div>
-              </div>
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">03</span>
-                  <span className="texto-flyer-info-velocidad">Precio</span>
-                  <span className="texto-flyer-info-especial">$80.000 USD</span>
-                </div>
-              </div>
-            </div>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -89,34 +61,6 @@ const CarouselHome = () => {
             >
               <button className="boton-item-carousel">CONTACTAR</button>
             </a>
-
-            <div className="row fila-flyer-info">
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">01</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Velocidad Máxima
-                  </span>
-                  <span className="texto-flyer-info-especial">250 km/h</span>
-                </div>
-              </div>
-              <div className="col-3 ">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">02</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Consumo Combustible
-                  </span>
-                  <span className="texto-flyer-info-especial">6.3 - 5,7.1</span>
-                </div>
-              </div>
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">03</span>
-                  <span className="texto-flyer-info-velocidad">Precio</span>
-                  <span className="texto-flyer-info-especial">$80.000 USD</span>
-                </div>
-              </div>
-            </div>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -135,34 +79,6 @@ const CarouselHome = () => {
             >
               <button className="boton-item-carousel">CONTACTAR</button>
             </a>
-
-            <div className="row fila-flyer-info">
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">01</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Velocidad Máxima
-                  </span>
-                  <span className="texto-flyer-info-especial">250 km/h</span>
-                </div>
-              </div>
-              <div className="col-3 ">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">02</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Consumo Combustible
-                  </span>
-                  <span className="texto-flyer-info-especial">6.3 - 5,7.1</span>
-                </div>
-              </div>
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">03</span>
-                  <span className="texto-flyer-info-velocidad">Precio</span>
-                  <span className="texto-flyer-info-especial">$80.000 USD</span>
-                </div>
-              </div>
-            </div>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -181,76 +97,18 @@ const CarouselHome = () => {
             >
               <button className="boton-item-carousel">CONTACTAR</button>
             </a>
-
-            <div className="row fila-flyer-info">
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">01</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Velocidad Máxima
-                  </span>
-                  <span className="texto-flyer-info-especial">250 km/h</span>
-                </div>
-              </div>
-              <div className="col-3 ">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">02</span>
-                  <span className="texto-flyer-info-velocidad">
-                    Consumo Combustible
-                  </span>
-                  <span className="texto-flyer-info-especial">6.3 - 5,7.1</span>
-                </div>
-              </div>
-              <div className="col-3">
-                <div className="contenedor-flyer-info">
-                  <span className="texto-flyer-info-numeros">03</span>
-                  <span className="texto-flyer-info-velocidad">Precio</span>
-                  <span className="texto-flyer-info-especial">$80.000 USD</span>
-                </div>
-              </div>
-            </div>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <div className="contenedor-barra">
-        <div className="barra-flyer">
-          <div
-            className="barra-indicador"
-            style={{
-              height: `${100 / totalSlides}%`,
-              top: `${(100 / totalSlides) * activeIndex}%`,
-            }}
-          ></div>
-          <span className="barra-flyer-numero">{`0${activeIndex + 1}`}</span>
-        </div>
-
-        <div className="contenedor-iconos">
-          <a
-            href="https://www.facebook.com/profile.php?id=100046230890961"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-facebook icono-flyer" aria-hidden="true"></i>
-          </a>
-
-          <a
-            href="https://www.instagram.com/sanmartin2162/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-instagram icono-flyer" aria-hidden="true"></i>
-          </a>
-          <a
-            href="https://x.com/home"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i
-              className="fa fa-twitter icono-flyer-twitter"
-              aria-hidden="true"
-            ></i>
-          </a>
-        </div>
+      <div className="barra-flyer">
+        <div
+          className="barra-indicador"
+          style={{
+            height: `${100 / totalSlides}%`,
+            top: `${(100 / totalSlides) * activeIndex}%`,
+          }}
+        ></div>
+        <span className="barra-flyer-numero">{`0${activeIndex + 1}`}</span>
       </div>
       <div>
         <a
