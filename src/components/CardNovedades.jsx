@@ -24,59 +24,58 @@ const CardNovedades = () => {
     },
   ];
   return (
-    <div>
-      <div className="container contenedor-card">
-        <div className="row">
-          <div className="container">
-            <div className="row">
-              {novedades.map((card, index) => (
-                <div
-                  className="col-10 offset-1 col-md-10 offset-md-1 col-lg-6 offset-lg-0"
-                  key={index}
-                >
-                  <Card
-                    className="card-novedades"
-                    style={{
-                      backgroundColor: card.backgroundColor,
-                      borderRadius: "1rem",
-                      border: "none",
-                    }}
+    <div className="container contenedor-card">
+      <div className="row g-4 justify-content-center">
+        {novedades.map((card, index) => (
+          <div
+            className="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0"
+            key={index}
+          >
+            <Card
+              className="card-novedades h-100"
+              style={{
+                backgroundColor: card.backgroundColor,
+                borderRadius: "1rem",
+                border: "none",
+              }}
+            >
+              <Card.Body className="card-body-novedades">
+                <div className="card-novedades-text">
+                  <Card.Title className="titulo-card-novedades">
+                    {card.titulo}
+                  </Card.Title>
+                  <Card.Subtitle className="mb-2 subtitulo-card-novedades">
+                    {card.subtitulo}
+                  </Card.Subtitle>
+
+                  <a
+                    href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Card.Body className="card-body-novedades">
-                      <Card.Title className="titulo-card-novedades">
-                        {card.titulo}
-                      </Card.Title>
-                      <Card.Subtitle className="mb-2 subtitulo-card-novedades">
-                        {card.subtitulo}
-                      </Card.Subtitle>
-
-                      <a
-                        href="https://api.whatsapp.com/send?phone=543815187503&text=Hola!%20Tengo%20una%20consulta%20para%20hacerte"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button
-                          style={{
-                            backgroundColor: card.backgroundColorButtom,
-                          }}
-                          className="boton-card-novedades"
-                        >
-                          Contactar
-                        </button>
-                      </a>
-
-                      <Card.Img
-                        variant="top"
-                        src={card.imagen}
-                        className="imagen-card-novedades"
-                      />
-                    </Card.Body>
-                  </Card>
+                    <button
+                      type="button"
+                      style={{
+                        backgroundColor: card.backgroundColorButtom,
+                      }}
+                      className="boton-card-novedades"
+                    >
+                      Contactar
+                    </button>
+                  </a>
                 </div>
-              ))}
-            </div>
+
+                <div className="card-novedades-img-wrap">
+                  <Card.Img
+                    src={card.imagen}
+                    alt=""
+                    className="imagen-card-novedades"
+                  />
+                </div>
+              </Card.Body>
+            </Card>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
