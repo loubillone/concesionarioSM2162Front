@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../css/navegador.css";
+import logoNavbar from "../assets/image/footer/smFooter.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,7 +12,7 @@ const Navegador = () => {
       <Navbar expand="lg" sticky="top">
         <Container fluid>
           <Navbar.Brand as={Link} to="/" className="logo-sm">
-            SM2162
+            <img src={logoNavbar} alt="SM 2162" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

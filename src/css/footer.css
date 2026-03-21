@@ -1,3 +1,8 @@
+/*
+ * Footer: breakpoints con max-width 767.98px y 479.98px (= por debajo de 768px y 480px).
+ * La barra inferior sigue con utilidades Bootstrap md (768px) en el JSX.
+ */
+
 .site-footer {
   --footer-bg: #1b1b1b;
   --footer-yellow: #ffbf00;
@@ -10,16 +15,23 @@
   overflow-x: clip;
 }
 
+/* —— Por defecto: ancho ≥768px (desktop) —— */
 .footer-shell {
-  padding-top: 2.75rem;
-  padding-bottom: 2rem;
-  padding-left: max(1.25rem, calc(var(--bs-gutter-x, 1.5rem) * 0.5));
-  padding-right: max(1.25rem, calc(var(--bs-gutter-x, 1.5rem) * 0.5));
+  padding: 2.75rem 2rem 2rem;
 }
 
 .footer-main {
   align-items: flex-start;
   padding-bottom: 3rem;
+}
+
+.footer-main > .col {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.footer-col-brand {
+  text-align: start;
 }
 
 .footer-brand {
@@ -69,12 +81,7 @@
   color: var(--footer-yellow);
 }
 
-.footer-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  padding-top: 2rem;
+.border-footer-top {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -82,24 +89,13 @@
   font-size: 1.1rem;
 }
 
-@media (min-width: 768px) {
-  .footer-bottom {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-}
-
 .footer-copy {
-  margin: 0;
-  font-size: 0.8125rem;
   color: var(--footer-muted);
   max-width: 100%;
 }
 
 .footer-legal {
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 1.25rem 1.75rem;
 }
@@ -110,8 +106,118 @@
   color: var(--footer-heading);
   text-decoration: none;
   white-space: nowrap;
+  line-height: 1.35;
 }
 
 .footer-legal a:hover {
   color: var(--footer-yellow);
+}
+
+/* —— max-width: por debajo de 768px —— */
+@media (max-width: 767.98px) {
+  .footer-shell {
+    padding: 2.25rem 1.25rem 1.75rem;
+  }
+
+  .footer-main {
+    padding-bottom: 2.25rem;
+  }
+
+  .footer-main > .col {
+    width: 50%;
+  }
+
+  .footer-brand img {
+    margin-left: 0;
+    max-width: min(200px, 55vw);
+    width: auto;
+  }
+
+  .footer-col-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-links {
+    gap: 0.7rem;
+  }
+
+  .footer-links a {
+    font-size: 1.05rem;
+  }
+
+  .footer-bottom .footer-copy {
+    font-size: 1rem;
+  }
+
+  .footer-legal a {
+    font-size: 1rem;
+  }
+}
+
+/* —— max-width: por debajo de 480px —— */
+@media (max-width: 479.98px) {
+  .footer-shell {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .footer-main {
+    padding-bottom: 1.75rem;
+  }
+
+  /* Logo a ancho completo; bloques de enlaces en 2 columnas */
+  .footer-main > .col.footer-col-brand {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-main > .col:not(.footer-col-brand) {
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - var(--bs-gutter-x, 1.5rem)) / 2);
+    width: calc((100% - var(--bs-gutter-x, 1.5rem)) / 2);
+    max-width: calc((100% - var(--bs-gutter-x, 1.5rem)) / 2);
+  }
+
+  .footer-col-brand {
+    text-align: center;
+  }
+
+  .footer-brand img {
+    margin-left: auto;
+    margin-right: auto;
+    /* ~la mitad respecto al bloque <768px (≈200px → ≤100px) */
+    max-width: min(100px, 28vw);
+    width: auto;
+    height: auto;
+  }
+
+  .footer-col-title {
+    font-size: 1.05rem;
+    margin: 0 0 0.6rem;
+  }
+
+  .footer-links {
+    gap: 0.55rem;
+  }
+
+  .footer-links a {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom .footer-copy {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .footer-legal a {
+    font-size: 0.9rem;
+    white-space: normal;
+  }
 }

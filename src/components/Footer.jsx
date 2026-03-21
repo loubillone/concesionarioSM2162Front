@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="container-fluid footer-shell">
-        <div className="row footer-main gy-4 gx-lg-4">
-          <div className="col-12 col-sm-6 col-lg-3">
+        <div className="row footer-main g-4">
+          <div className="col footer-col-brand">
             <Link to="/" className="footer-brand">
               <img src={smLogoF} alt="SM 2162" />
             </Link>
           </div>
-          <div className="col-12 col-sm-6 col-lg-3">
+          <div className="col">
             <h2 className="footer-col-title">Sobre Nosotros</h2>
             <ul className="footer-links">
               <li>
@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-sm-6 col-lg-3">
+          <div className="col">
             <h2 className="footer-col-title">Servicio</h2>
             <ul className="footer-links">
               <li>
@@ -47,7 +47,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-sm-6 col-lg-3">
+          <div className="col">
             <h2 className="footer-col-title">Redes Sociales</h2>
             <ul className="footer-links">
               <li>
@@ -90,11 +90,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <p className="footer-copy">
+        <div className="footer-bottom d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between gap-3 gap-md-4 pt-4 border-footer-top">
+          <p className="footer-copy mb-0">
             ©Bruno Bianchi - San Martin 2162 - San Miguel De Tucumán
           </p>
-          <div className="footer-legal">
+          <div className="footer-legal d-flex flex-wrap align-items-start">
             <a href="#">Privacidad y Política</a>
             <a href="#">Términos y Condiciones</a>
           </div>
