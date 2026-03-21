@@ -23,10 +23,6 @@ const CarouselHome = () => {
         pause={false}
         activeIndex={activeIndex}
         onSelect={handleSelect}
-        // controls={false}
-        // indicators={false}
-        // interval={null}
-        // pause={"hover"}
       >
         <Carousel.Item className="carousel-item">
           <img

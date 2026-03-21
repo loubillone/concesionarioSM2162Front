@@ -18,12 +18,21 @@ body {
 }
 
 .logo-sm {
-  font-family: "kulacino";
+  display: flex;
+  align-items: center;
   margin-left: 2rem;
-  font-size: 1.8rem !important;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #262626 !important;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  padding: 0;
+  line-height: 0;
+}
+
+.logo-sm img {
+  display: block;
+  height: 4.8rem;
+  width: auto;
+  max-width: min(16rem, 38vw);
+  object-fit: contain;
 }
 
 .container-items {
@@ -79,6 +88,11 @@ body {
 @media (max-width: 480px) {
   .logo-sm {
     margin-left: 1rem;
+  }
+
+  .logo-sm img {
+    height: 3.6rem;
+    max-width: min(12rem, 52vw);
   }
 
   .navbar-iconos {
