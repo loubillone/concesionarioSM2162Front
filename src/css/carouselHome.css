@@ -93,10 +93,56 @@
 
 /*MEDIA QUERIES*/
 
+/*
+ * 769px–1199px: fuera de "mobile" pero sin ancho de desktop grande;
+ * el estilo base (12rem + height fijo) oculta el botón CONTACTAR.
+ */
+@media (min-width: 769px) and (max-width: 1199.98px) {
+  .contenedor-texto-carousel {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    top: 18%;
+    left: 38%;
+    right: 1.25rem;
+    width: auto;
+    max-width: calc(100% - 38% - 1.25rem);
+    box-sizing: border-box;
+    padding-bottom: 0.75rem;
+    overflow: visible;
+  }
+
+  .titulo-item-carousel {
+    font-size: clamp(4.5rem, 7.5vw, 9rem);
+    line-height: 0.95;
+  }
+
+  .texto-item-carousel {
+    font-size: clamp(1.1rem, 1.65vw, 1.65rem);
+    width: min(48%, 26rem);
+    max-width: 100%;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+  }
+
+  .barra-flyer {
+    height: clamp(14rem, 42vh, 24rem);
+  }
+
+  .barra-flyer-numero {
+    font-size: clamp(1rem, 1.4vw, 1.35rem);
+  }
+
+  .texto-item-carousel {
+    width: 70%;
+  }
+}
+
 @media (max-width: 768px) {
   .contenedor-texto-carousel {
     width: 100%;
-    height: 10rem;
+    height: auto;
+    min-height: 0;
     top: 10%;
     left: 40%;
   }
@@ -135,11 +181,26 @@
   }
 }
 
+/* Entre 481px y 768px: título y textos más chicos para que quepa el botón CONTACTAR */
+@media (max-width: 768px) and (min-width: 481px) {
+  .titulo-item-carousel {
+    font-size: clamp(3rem, 9vw, 5.5rem);
+    line-height: 0.95;
+  }
+
+  .texto-item-carousel {
+    font-size: clamp(0.95rem, 2.4vw, 1.3rem);
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+}
+
 @media (max-width: 480px) {
   .contenedor-texto-carousel {
     top: 8%;
     width: 80%;
-    height: 10rem;
+    height: auto;
+    min-height: 0;
   }
 
   .titulo-item-carousel {
